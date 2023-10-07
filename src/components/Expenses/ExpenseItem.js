@@ -3,7 +3,7 @@ import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 import Card from "../UI/Card";
 
-function ExpenseItem(expenseItemList) {
+const ExpenseItem = (expenseItemList) => {
   return (
     <Card className="expense-item">
       <ExpenseDate date={expenseItemList.date} />
@@ -14,6 +14,6 @@ function ExpenseItem(expenseItemList) {
       />
     </Card>
   );
-}
+};
 
 export default ExpenseItem;

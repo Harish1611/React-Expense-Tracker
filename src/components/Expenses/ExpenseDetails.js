@@ -1,6 +1,6 @@
 import "./ExpenseItem.css";
 
-function ExpenseDetails(expenseItemDetails) {
+const ExpenseDetails = (expenseItemDetails) => {
   return (
     <div className="expense-item__description">
       <h2> {expenseItemDetails.name}</h2>
@@ -8,6 +8,6 @@ function ExpenseDetails(expenseItemDetails) {
       <div className="expense-item__price">${expenseItemDetails.amount}</div>
     </div>
   );
-}
+};
 
 export default ExpenseDetails;

@@ -1,7 +1,7 @@
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 
-function Expenses() {
+const Expenses = () => {
   const ExpItems = [
     {
       name: "Food",
@@ -40,6 +40,6 @@ function Expenses() {
       ))}
     </Card>
   );
-}
+};
 
 export default Expenses;
