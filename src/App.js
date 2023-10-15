@@ -28,12 +28,6 @@ const ExpItems = [
     locationOfExpenditure: "Travel",
     date: new Date(2021, 4, 21),
   },
-  {
-    title: "Business Trip",
-    amount: 40000,
-    locationOfExpenditure: "Travel",
-    date: new Date(2019, 4, 21),
-  },
 ];
 
 const App = () => {

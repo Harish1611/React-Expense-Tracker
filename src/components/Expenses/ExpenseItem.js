@@ -16,16 +16,18 @@ const ExpenseItem = (expenseItemList) => {
   };
 
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={expenseItemList.date} />
-      <ExpenseDetails
-        title={expenseItemList.title}
-        locationOfExpenditure={expenseItemList.locationOfExpenditure}
-        amount={expenseCost}
-      />
-      <button onClick={expenseAmountHandler}>Change Amout</button>
-      <button onClick={deteleExpense}>Delete</button>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={expenseItemList.date} />
+        <ExpenseDetails
+          title={expenseItemList.title}
+          locationOfExpenditure={expenseItemList.locationOfExpenditure}
+          amount={expenseCost}
+        />
+        <button onClick={expenseAmountHandler}>Change Amout</button>
+        <button onClick={deteleExpense}>Delete</button>
+      </Card>
+    </li>
   );
 };
 
