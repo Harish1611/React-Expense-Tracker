@@ -8,25 +8,31 @@ const ExpItems = [
     title: "Food",
     amount: 2000,
     locationOfExpenditure: "Personal",
-    date: new Date(20, 4, 23),
+    date: new Date(2020, 4, 22),
   },
   {
     title: "Bills",
     amount: 12000,
     locationOfExpenditure: "Business",
-    date: new Date(15, 2, 23),
+    date: new Date(2021, 2, 22),
   },
   {
     title: "College Fee",
     amount: 60000,
     locationOfExpenditure: "Education",
-    date: new Date(13, 5, 23),
+    date: new Date(2022, 5, 20),
   },
   {
     title: "Family Trip",
     amount: 20000,
     locationOfExpenditure: "Travel",
-    date: new Date(16, 4, 23),
+    date: new Date(2021, 4, 21),
+  },
+  {
+    title: "Business Trip",
+    amount: 40000,
+    locationOfExpenditure: "Travel",
+    date: new Date(2019, 4, 21),
   },
 ];
 
