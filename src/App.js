@@ -45,9 +45,6 @@ const App = () => {
 
   return (
     <div>
-      <div className="new-expense__actions">
-        <button> Add New Expense </button>
-      </div>
       <NewExpense onSaveExpense={onSaveExpeseHandler} />
 
       <Expenses items={expenseItemList} />
