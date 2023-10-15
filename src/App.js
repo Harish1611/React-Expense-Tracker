@@ -1,44 +1,49 @@
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import "./components/Expenses/ExpenseItem.css";
+import { useState } from "react";
 
 const App = () => {
   const ExpItems = [
     {
-      name: "Food",
-      cost: 2000,
+      title: "Food",
+      amount: 2000,
       locationOfExpenditure: "Personal",
       date: new Date(20, 4, 23),
     },
     {
-      name: "Bills",
-      cost: 12000,
+      title: "Bills",
+      amount: 12000,
       locationOfExpenditure: "Business",
       date: new Date(15, 2, 23),
     },
     {
-      name: "College Fee",
-      cost: 60000,
+      title: "College Fee",
+      amount: 60000,
       locationOfExpenditure: "Education",
       date: new Date(13, 5, 23),
     },
     {
-      name: "Family Trip",
-      cost: 20000,
+      title: "Family Trip",
+      amount: 20000,
       locationOfExpenditure: "Travel",
       date: new Date(16, 4, 23),
     },
   ];
 
+  const [expenseItemList, setEnteredItemList] = useState(ExpItems);
+
   const onSaveExpeseHandler = (dataSubmitted) => {
     console.log(dataSubmitted, "reached App");
+    const updatedExpenseItemList = [...expenseItemList, dataSubmitted];
+    setEnteredItemList(updatedExpenseItemList);
   };
 
   return (
     <div>
       <NewExpense onSaveExpense={onSaveExpeseHandler} />
 
-      <Expenses items={ExpItems} />
+      <Expenses items={expenseItemList} />
     </div>
   );
 };
